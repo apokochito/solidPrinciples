@@ -1,5 +1,6 @@
 package com.principles;
 
+import com.principles.is.School;
 import com.principles.ls.Rectangle;
 import com.principles.ls.Shape;
 import com.principles.ls.Square;
@@ -44,7 +45,9 @@ public class Main {
         System.out.println("");
 
         // 4. Interface Segregation
-
+        School school = new School();
+        System.out.println(school.cyberbullying("Group A"));
+        System.out.println(school.leaderships("Among us Society"));
 
         System.out.println("");
 
