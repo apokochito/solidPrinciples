@@ -1,5 +1,8 @@
 package com.principles;
 
+import com.principles.di.AddCalculatorOperation;
+import com.principles.di.Calculator;
+import com.principles.di.DivideCalculatorOperation;
 import com.principles.is.School;
 import com.principles.ls.Rectangle;
 import com.principles.ls.Shape;
@@ -52,7 +55,9 @@ public class Main {
         System.out.println("");
 
         // 5. Dependency Inversion
-
-
+        Calculator sum = new Calculator(new AddCalculatorOperation());
+        System.out.println("Addition result - " + sum.Solve(1, 6));
+        Calculator div = new Calculator(new DivideCalculatorOperation());
+        System.out.println("Divide result - " + div.Solve(6, 2));
     }
 }
